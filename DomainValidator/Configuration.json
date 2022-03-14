@@ -1,0 +1,44 @@
+{
+    "Database Configuration":
+            {
+                "IPAddress": "DESKTOP-NMQJ2B2",
+                "Username": "sa",
+                "Password": "sql2019",
+                "Database": "ACE",
+                "InputTable": "DomainInput",
+                "OutputTable": "DomainValidation_13032022",
+                "Deadlockpriority":"5"
+            },
+    "Start record id & End Range record id":
+            {
+                "startID": 1,
+                "endID": 10,
+                "ThreadSize":1
+            },
+    
+            
+    "URL Connection Timeout in milli secs":
+            {
+                "LoopCount":3,
+        "MetaURLRegex":"URL=(.*?)(\"|')[^<>]*>",
+                "UserAgent":"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+                "Timeout": 30000,
+                "TimeoutForProcessingInMinutes": 5,
+                "TimeRelayInSeconds": 30
+            },
+            
+            "Buckets":{
+                "Blacklist_Chk":"true",
+                "Blacklist_KeyFile":"BlackList_Domain.txt",
+                "PageNotFound_Chk":"true",
+                "PageNotFound_KeyFile":"PageNotFound.txt",
+                "TLD_chk":"true",
+                "TLD_KeyFile":"tldnames.txt",
+                "GeneralSite_KeyFile":"GeneralSites.txt"
+               
+"URL_Exclusion_Regex":"\\b((\\.pdf$)|(\\.zip$))\\b"
+
+            }
+            
+            
+}
